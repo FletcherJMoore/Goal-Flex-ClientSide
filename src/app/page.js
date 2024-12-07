@@ -2,8 +2,8 @@
 
 // any component that uses useAuth needs this because if a component directly imports useAuth, it needs to be a client component since useAuth uses React hooks.
 import React, { useState, useEffect } from 'react';
-import { getWorkouts } from '../api/workoutData';
 import WorkoutCard from '../components/WorkoutCard';
+import { getWorkouts } from '../api/workoutData';
 
 function Home() {
   const [workouts, setWorkouts] = useState([]);
